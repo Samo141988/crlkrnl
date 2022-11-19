@@ -1,0 +1,3 @@
+[submodule "scripts/toolchain"]
+	path = toolchain
+	url = https://github.com/Abualaagit/toolchains_compiler
