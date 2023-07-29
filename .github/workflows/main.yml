@@ -4,7 +4,7 @@ on: [push]
 
 env:
   TOOLCHAIN: samsung
-  INSTALLER: yes
+  INSTALLER: no
 
 jobs:
   build:
@@ -57,7 +57,7 @@ jobs:
                        model=${{ matrix.model }} \
                        name="A12_Kernel_samsung_alwayspermit_25hz"        \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       +magisk=canary                   \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
