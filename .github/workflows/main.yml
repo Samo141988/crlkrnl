@@ -55,16 +55,15 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="A12_Kernel_samsung_alwayspermit_25hz"        \
+                       name="A12_Kernel_25hz"        \
                        toolchain=$TOOLCHAIN      \
-                       +magisk=canary                   \
+                       +magisk=alpha                   \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
-                       +always_permit            \
                        +25hz                     \
                        +force_dex_wqhd           \
                        +morosound                \
