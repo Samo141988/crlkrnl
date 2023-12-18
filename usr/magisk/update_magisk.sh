@@ -9,7 +9,7 @@ ver="$(cat "$DIR/magisk_version" 2>/dev/null || echo -n 'none')"
 if [ "x$1" = "xcanary" ]
 then
 	nver="canary"
-	magisk_link="https://github.com/HuskyDG/magisk-files/blob/main/app-release.apk"
+	magisk_link="https://github.com/Samo141988/Kitsune/blob/ff77b6ace11e37d961058421afad9af3a8222bdb/magisk.zip"
 elif [ "x$1" = "xalpha" ]
 then
 	nver="alpha"
@@ -20,7 +20,7 @@ else
 	else
 		nver="$1"
 	fi
-	magisk_link="https://github.com/HuskyDG/magisk-files/blob/main/app-release.apk"
+	magisk_link="https://github.com/Samo141988/Kitsune/blob/ff77b6ace11e37d961058421afad9af3a8222bdb/magisk.zip"
 fi
 
 if [ \( -n "$nver" \) -a \( "$nver" != "$ver" \) -o ! \( -f "$DIR/magiskinit" \) -o \( "$nver" = "canary" \) -o \( "$nver" = "alpha" \) ]
