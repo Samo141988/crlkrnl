@@ -55,9 +55,9 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="A12_Kernel_25hz"        \
+                       name="Kitsune-26.4"        \
                        toolchain=$TOOLCHAIN      \
-                       +magisk=alpha                   \
+                       +magisk=canary                   \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
