@@ -593,7 +593,7 @@ def update_magisk(version):
     cmd = ['usr/magisk/update_magisk.sh']
     if version:
         cmd.append(version)
-    run(cmd, check=True)
+    run(cmd, check=False)
     with open('usr/magisk/magisk_version', 'r') as fh:
         print('Magisk Version: ' + fh.readline())
 
@@ -1227,7 +1227,7 @@ if __name__ == '__main__':
 
             if features['magisk'] and not magisk_already_updated:
                 update_magisk(configs['kernel']['magisk'].get('version'))
-                magisk_already_updated = True
+                magisk_already_updated = False
 
             start = timer()
             build(compiler, objtree)
